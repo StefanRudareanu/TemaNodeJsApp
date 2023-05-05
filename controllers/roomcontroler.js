@@ -18,7 +18,6 @@ router.delete("/meetingroom/:id", (req, res) => {
     if (err) {
       res.status(400).send({ err: err });
     } else {
-      console.log(err);
       res.status(200).send("Success");
     }
   });
